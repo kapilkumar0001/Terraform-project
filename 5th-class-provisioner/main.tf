@@ -87,6 +87,20 @@ resource "aws_instance" "webserver" {
       command = "echo ${self.private_ip} >> private_ip.txt"
   }
 
+  provisioner "remote-exec" {
+      inline = [ 
+        "echo ${self.private_ip} >> /home/ubuntu/private_ip.txt"
+        #echo hello world >> /home/ubuntu/private_ip.txt"
+      ]
+      connection {
+          type = "ssh"
+          user = "ubuntu"
+          host = "${self.public_ip}"
+          private_key = "${file("/home/kapil/.ssh/id_rsa")}"
+
+      }
+  }
+
   tags = {
     Name = "myserver"
     }
