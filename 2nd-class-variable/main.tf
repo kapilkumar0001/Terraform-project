@@ -14,12 +14,13 @@ provider "aws" {
 } 
 
 variable "instance_type" { 
-    type = string
+  type = string
 }
 
 resource "aws_instance" "webserver1" {
-  ami           = "ami-0fed77069cd5a6d6c"
-  instance_type = "var.instance_type"
+  ami = "ami-0fed77069cd5a6d6c"
+# instance_type = "t2.nano"
+  instance_type = var.instance_type
   key_name = "singapore"
   
 
