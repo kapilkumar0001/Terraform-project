@@ -1,11 +1,12 @@
 terraform {
-  backend "remote" {
+ /* backend "remote" {
     organization = "kapil_kamboj"
 
     workspaces {
       name = "provisioner"
     }
   }
+  */
   required_providers {
     aws = {
       source = "hashicorp/aws"
@@ -82,6 +83,9 @@ resource "aws_instance" "webserver" {
   key_name = "${aws_key_pair.deployer.key_name}"
   vpc_security_group_ids= [aws_security_group.my-secuity_group1.id]
   user_data = data.template_file.user_data.rendered
+  provisioner "local-exec" {
+      command = "echo $(self.private_ip)" >> private_ip.txt
+  }
 
   tags = {
     Name = "myserver"
