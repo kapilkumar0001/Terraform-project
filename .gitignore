@@ -5,3 +5,5 @@
 3rd-class-modules/.terraform.lock.hcl
 3rd-class-modules/.terraform/providers/registry.terraform.io/hashicorp/aws/3.68.0/linux_amd64
 4th-class-split-files/.terraform.lock.hcl
+5th-class-provisioner/.terraform
+5th-class-provisioner/.terraform/terraform.tfstate
