@@ -2,3 +2,5 @@
 .terraform.lock.hcl
 2nd-class-variable/terraform.tfstate.backup
 .terraform/providers/registry.terraform.io/hashicorp/aws/3.68.0/linux_amd64/terraform-provider-aws_v3.68.0_x5
+3rd-class-modules/.terraform.lock.hcl
+3rd-class-modules/.terraform/providers/registry.terraform.io/hashicorp/aws/3.68.0/linux_amd64
