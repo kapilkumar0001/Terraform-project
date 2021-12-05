@@ -99,7 +99,21 @@ resource "aws_instance" "webserver" {
           private_key = "${file("/home/kapil/.ssh/id_rsa")}"
 
       }
+  
   }
+
+  provisioner "file" {
+      content = "mars"
+      destination = "/home/ubuntu/ami_name.txt"
+      connection {
+          type = "ssh"
+          user = "ubuntu"
+          host = "${self.public_ip}"
+          private_key = "${file("/home/kapil/.ssh/id_rsa")}"
+
+      }
+    }
+
 
   tags = {
     Name = "myserver"
