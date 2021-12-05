@@ -84,7 +84,7 @@ resource "aws_instance" "webserver" {
   vpc_security_group_ids= [aws_security_group.my-secuity_group1.id]
   user_data = data.template_file.user_data.rendered
   provisioner "local-exec" {
-      command = "echo $(self.private_ip)" >> private_ip.txt
+      command = "echo ${self.private_ip} >> private_ip.txt"
   }
 
   tags = {
