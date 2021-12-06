@@ -10,3 +10,4 @@
 6th-class-azure-provoder/.terraform/providers/registry.terraform.io/hashicorp/azurerm/2.88.1/linux_amd64
 6th-class-azure-provoder/terraform.tfstate
 7th-class-variables-and-output/.terraform
+8th-class-submodules/.terraform.tfstate.lock.info
