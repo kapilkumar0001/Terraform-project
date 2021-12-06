@@ -7,3 +7,4 @@
 4th-class-split-files/.terraform.lock.hcl
 5th-class-provisioner/.terraform
 5th-class-provisioner/.terraform/terraform.tfstate
+6th-class-azure-provoder/.terraform/providers/registry.terraform.io/hashicorp/azurerm/2.88.1/linux_amd64
