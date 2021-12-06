@@ -18,7 +18,7 @@ variable "instance_type" {
   description = "The size of the instance type"
   sensitive = true
   validation {
-      condition = can(regex("^t3.",var.instance_type))
+      condition = can(regex("^t2.",var.instance_type))
       error_message = "The instance t3 type EC2 Instance."
   }
 }
