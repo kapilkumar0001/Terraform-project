@@ -9,3 +9,4 @@
 5th-class-provisioner/.terraform/terraform.tfstate
 6th-class-azure-provoder/.terraform/providers/registry.terraform.io/hashicorp/azurerm/2.88.1/linux_amd64
 6th-class-azure-provoder/terraform.tfstate
+7th-class-variables-and-output/.terraform
