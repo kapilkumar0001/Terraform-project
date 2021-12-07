@@ -23,7 +23,7 @@ resource "aws_instance" "webserver1" {
     Name = "myserver1"
   }
   lifecycle {
-        prevent_destroy = true
+        prevent_destroy = false
   } 
 } 
 #output variables
