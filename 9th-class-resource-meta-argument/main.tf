@@ -14,10 +14,7 @@ provider "aws" {
 } 
 
 resource "aws_s3_bucket" "bucket" {
-  bucket = "9466560999-depend"
-  depends_on = [
-    aws_instance.webserver1
-  ]
+  bucket = "9466560988-depend"
   
   tags = {
     Name        = "My bucket"
@@ -31,6 +28,10 @@ resource "aws_instance" "webserver1" {
   instance_type = "t2.nano"
  # instance_type = var.instance_type
   key_name = "singapore"
+  depends_on = [
+    aws_s3_bucket.bucket
+  ]
+  
 #USing local varibales 
   tags = {
     Name = "myserver1"
