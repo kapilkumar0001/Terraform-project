@@ -26,7 +26,6 @@ resource "aws_instance" "webserver1" {
   #count = 2
   ami = "ami-0fed77069cd5a6d6c"
   instance_type = "t2.nano"
- # instance_type = var.instance_type
   key_name = "singapore"
   depends_on = [
     aws_s3_bucket.bucket
