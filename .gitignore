@@ -13,3 +13,4 @@
 8th-class-submodules/.terraform.tfstate.lock.info
 9th-class-resource-meta-argument/.terraform
 10th-class-resource-meta-argument-count/.terraform/providers/registry.terraform.io/hashicorp/aws/3.68.0/linux_amd64
+11th-class-resource-meta-argument-for-each/.terraform
