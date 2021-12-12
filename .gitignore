@@ -16,3 +16,5 @@
 11th-class-resource-meta-argument-for-each/.terraform
 12th-class-resource-meta-argument-alias/.terraform
 13th-class-resource-meta-argument-lifecycle/.terraform
+17-class-modules/.terraform
+18-class-terraform-backend-standard-s3/.terraform
